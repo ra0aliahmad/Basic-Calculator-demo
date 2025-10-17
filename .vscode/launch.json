@@ -1,7 +1,6 @@
 {
     "version": "0.2.0",
     "configurations": [
-        
         {
             "name": "C/C++: g++.exe build and debug active file",
             "type": "cppdbg",
@@ -12,6 +11,8 @@
             "cwd": "${fileDirname}",
             "environment": [],
             "externalConsole": true,
+            "console": "integratedTerminal",
+            "preLaunchTask": "C/C++: g++.exe build active file",
             "MIMode": "gdb",
             "miDebuggerPath": "C:/MinGW/bin/gdb.exe",
             "setupCommands": [
