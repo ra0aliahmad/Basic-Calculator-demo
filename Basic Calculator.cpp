@@ -8,7 +8,7 @@ int main() {
     cout << "Enter first number: ";
     cin >> num1;
 
-    cout << "Enter an operator (+, -, *, /): ";
+    cout << "Enter operator (+, -, *, /): ";
     cin >> op;
 
     cout << "Enter second number: ";
@@ -25,14 +25,18 @@ int main() {
                 result = num1 / num2;
             else {
                 cout << "Error: Division by zero!" << endl;
-                return 1;
+                system("pause");
+                return 0;
             }
             break;
         default:
             cout << "Invalid operator!" << endl;
-            return 1;
+            system("pause");
+            return 0;
     }
 
     cout << "Result: " << result << endl;
+
+    system("pause"); // 
     return 0;
-}  
+}
