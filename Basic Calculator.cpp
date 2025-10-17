@@ -25,19 +25,19 @@ int main() {
                 result = num1 / num2;
             else {
                 cout << "Error: Division by zero!" << endl;
-                return 0; // ✅ this exits properly on error
+                return 0; 
             }
             break;
         default:
             cout << "Invalid operator!" << endl;
-            return 0; // ✅ this exits on invalid operator
+            return 0; 
     }
 
     cout << "Result: " << result << endl;
 
-    // ✅ Wait for user before closing
-    cin.ignore();  // clear leftover newline
+   
+    cin.ignore();  
     cout << "\nPress Enter to exit...";
-    cin.get();     // waits for Enter key
+    cin.get();      
     return 0;
 }
