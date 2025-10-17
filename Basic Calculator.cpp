@@ -35,9 +35,10 @@ int main() {
 
     cout << "Result: " << result << endl;
 
-   
-    cin.ignore();  
-    cout << "\nPress Enter to exit...";
-    cin.get();      
-    return 0;
-}
+// Pause before exit
+cout << "\nPress Enter to exit...";
+cin.ignore();
+cin.get();
+
+return 0;
+
